@@ -171,6 +171,7 @@ span {
   background-color: var(--Strong-cyan);
   opacity: 0.3;
   text-transform: uppercase;
+  color: var(--Dark-grayish-cyan);
 }
 .btn__reset--active {
   margin-top: 90px;
@@ -204,18 +205,26 @@ span {
 }
 
 #billInput {
+  background: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left;
   text-align: right;
   padding-right: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  opacity: 0.7;
   border: none;
 }
 
 #numOfPeople {
+  background-image: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left;
   text-align: right;
   padding-right: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  opacity: 0.7;
   border: none;
 }
 @media (max-width: 700px) {
