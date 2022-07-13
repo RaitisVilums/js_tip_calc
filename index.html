@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body class="card">
+    <header class="card__header">
+      <img
+        class="card__header--logo"
+        src="images/logo.svg"
+        alt="Tip Calc Logo"
+      />
+    </header>
+
+    <main class="card__main">
+      <section class="card__main--input">
+        <h1 class="title">Bill</h1>
+        <input
+          onkeyup="calculateBill()"
+          type="number"
+          id="billInput"
+          placeholder="0.00"
+        />
+        <h1 class="title">Select Tip %</h1>
+        <div class="btn__section">
+          <button value="A" class="btn">5%</button>
+          <button value="B" class="btn">10%</button>
+          <button value="C" class="btn">15%</button>
+          <button value="D" class="btn">25%</button>
+          <button value="F" class="btn">50%</button>
+          <input
+            onkeyup="calculateBill()"
+            id="cutsomInput"
+            type="number"
+            placeholder="Custom"
+          />
+        </div>
+        <div class="flex--wrap">
+          <h1 class="title">Number of People</h1>
+          <p class="visible">Wrong value</p>
+        </div>
+        <input
+          onkeyup="calculateBill()"
+          type="number"
+          id="numOfPeople"
+          placeholder="1"
+        />
+      </section>
+
+      <section class="card__main--output">
+        <div class="amount__section">
+          <div>
+            <h1 class="title title--output">Tip Amount</h1>
+            <span>/ person</span>
+          </div>
+          <div id="perPerson" class="totalTip">$0.00</div>
+        </div>
+        <div class="amount__section">
+          <div>
+            <h1 class="title title--output">Total</h1>
+            <span>/ person</span>
+          </div>
+          <div id="perPersonTotal" class="totalTip">$0.00</div>
+        </div>
+        <button class="btn__reset--disabled" id="resetBtn">Reset</button>
+      </section>
+    </main>
+
+    <footer class="card__footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Raitis Vilums</a>.
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
